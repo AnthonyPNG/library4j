@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <children>
+      <Label layoutX="78.0" layoutY="14.0" text="Welcome to the LIBRARY4J!">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="346.0" layoutX="20.0" layoutY="91.0" stroke="BLACK" strokeType="INSIDE" width="410.0" />
+      <Label layoutX="83.0" layoutY="91.0" prefHeight="74.0" prefWidth="284.0" text="Hello admin! Nice to meet you!" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="198.0" layoutY="510.0" mnemonicParsing="false" onAction="#switchToHomepage" text="Logout" />
+      <Button layoutX="128.0" layoutY="193.0" mnemonicParsing="false" onAction="#switchToSeeUser" prefHeight="26.0" prefWidth="189.0" text="See Users">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="130.0" layoutY="329.0" mnemonicParsing="false" onAction="#switchToSeeBorrowingHistory" prefHeight="26.0" prefWidth="190.0" text="Borrowing History">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="130.0" layoutY="262.0" mnemonicParsing="false" onAction="#switchToSearchBookAdmin" prefHeight="26.0" prefWidth="190.0" text="Search Book">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

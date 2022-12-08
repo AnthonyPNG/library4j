@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <children>
+      <Label layoutX="78.0" layoutY="14.0" text="Welcome to the LIBRARY4J!">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="200.0" layoutX="20.0" layoutY="91.0" stroke="BLACK" strokeType="INSIDE" width="410.0" />
+      <Label layoutX="30.0" layoutY="102.0" prefHeight="126.0" prefWidth="389.0" text="You are connected! You can search a book and ask for borrowing a book. You can also see your history." wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="71.0" layoutY="244.0" mnemonicParsing="false" onAction="#switchToSeeHistory" prefHeight="30.0" prefWidth="308.0" text="See history">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="153.0" layoutY="414.0" mnemonicParsing="false" onAction="#switchToSearchBookUser" prefHeight="26.0" prefWidth="139.0" text="Search a book">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="196.0" layoutY="510.0" mnemonicParsing="false" onAction="#switchToHomepage" text="Logout" />
+   </children>
+</AnchorPane>

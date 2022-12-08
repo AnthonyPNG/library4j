@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <children>
+      <Label layoutX="172.0" layoutY="14.0" text="Create User">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="214.0" layoutY="510.0" mnemonicParsing="false" onAction="#switchToSeeUser" text="Back" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="426.0" layoutX="20.0" layoutY="56.0" stroke="BLACK" strokeType="INSIDE" width="410.0" />
+      <Label layoutX="41.0" layoutY="137.0" text="Last Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfLastName" layoutX="39.0" layoutY="157.0" prefHeight="26.0" prefWidth="370.0" promptText="Last Name" />
+      <Label layoutX="39.0" layoutY="350.0" text="Password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="150.0" layoutY="440.0" mnemonicParsing="false" onAction="#userRegister" prefHeight="30.0" prefWidth="167.0" text="Submit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="tfPasswordRegister" layoutX="40.0" layoutY="370.0" prefHeight="26.0" prefWidth="370.0" promptText="Password" />
+      <Label layoutX="35.0" layoutY="64.0" text="First Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="280.0" text="Email">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="211.0" text="Phone Number">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfFirstName" layoutX="39.0" layoutY="84.0" prefHeight="26.0" prefWidth="370.0" promptText="First Name" />
+      <Label fx:id="wrongEmail" layoutX="40.0" layoutY="403.0" prefHeight="18.0" prefWidth="370.0" textFill="RED" />
+      <TextField fx:id="tfPhone" layoutX="39.0" layoutY="231.0" prefHeight="26.0" prefWidth="370.0" promptText="Phone Number" />
+      <TextField fx:id="tfEmailRegister" layoutX="40.0" layoutY="300.0" prefHeight="26.0" prefWidth="370.0" promptText="Email" />
+   </children>
+</AnchorPane>

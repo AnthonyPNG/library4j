@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <children>
+      <Label layoutX="106.0" layoutY="14.0" text="Ask for borrow a book">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d9d9" height="238.0" layoutX="19.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="411.0" />
+      <Label layoutX="34.0" layoutY="105.0" prefHeight="20.0" prefWidth="41.0" text="Title">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfTitle" layoutX="32.0" layoutY="125.0" prefHeight="26.0" prefWidth="383.0" promptText="Title" />
+      <Button layoutX="57.0" layoutY="291.0" mnemonicParsing="false" onAction="#askBorrowing" prefHeight="26.0" prefWidth="335.0" text="Submit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="34.0" layoutY="206.0" text="Email">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfEmailAskBorrow" layoutX="32.0" layoutY="226.0" prefHeight="26.0" prefWidth="383.0" promptText="Email" />
+      <Label layoutX="32.0" layoutY="187.0" prefHeight="18.0" prefWidth="383.0" text="Enter email for borrowing the mail" />
+      <Label fx:id="lblWrongMessage" layoutX="33.0" layoutY="256.0" prefHeight="18.0" prefWidth="383.0" textFill="RED" />
+      <Button layoutX="205.0" layoutY="510.0" mnemonicParsing="false" onAction="#switchToHomepageConnected" text="Back" />
+      <Button layoutX="131.0" layoutY="452.0" mnemonicParsing="false" onAction="#switchToSeeHistory" prefHeight="26.0" prefWidth="187.0" text="See history">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
